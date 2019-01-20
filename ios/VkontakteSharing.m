@@ -1,25 +1,10 @@
-#if __has_include(<React/RCTBridge.h>)
 #import <React/RCTBridge.h>
 #import <React/RCTConvert.h>
 #import <React/RCTUtils.h>
 #import <React/RCTImageLoader.h>
 #import <React/RCTImageSource.h>
-#elif __has_include("RCTBridge.h")
-#import "RCTBridge.h"
-#import "RCTConvert.h"
-#import "RCTUtils.h"
-#import "RCTImageLoader.h"
-#import "RCTImageSource.h"
-#else
-#import "React/RCTBridge.h" // Required when used as a Pod in a Swift project
-#import "React/RCTConvert.h"
-#import "React/RCTUtils.h"
-#import "React/RCTImageLoader.h"
-#import "React/RCTImageSource.h"
-#endif
 
 #import "VkontakteSharing.h"
-#import "RNVkontakteLoginUtils.h"
 
 #if __has_include(<VKSdkFramework/VKSdkFramework.h>)
 #import <VKSdkFramework/VKSdkFramework.h>
@@ -38,7 +23,7 @@
 @synthesize bridge = _bridge;
 
 - (void)openShareDlg:(VKShareDialogController *) dialog resolver: (RCTPromiseResolveBlock) resolve rejecter:(RCTPromiseRejectBlock) reject {
-  UIViewController *root = [RNVkontakteLoginUtils topMostViewController];
+  UIViewController *root = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
   [dialog setCompletionHandler:^(VKShareDialogController *dialog, VKShareDialogControllerResult result) {
     if (result == VKShareDialogControllerResultDone) {
       DMLog(@"onVkShareComplete");

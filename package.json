@@ -1,21 +1,76 @@
 {
-  "name": "react-native-vkontakte-login",
-  "version": "0.4.0-beta.2",
+  "_args": [
+    [
+      "react-native-vkontakte-login@https://npm.eigenframe.com/MuStar/react-native-vkontakte-login?v=0.3.2-isloggedin",
+      "/Users/algeran/Documents/Projects/MustarReact"
+    ]
+  ],
+  "_from": "react-native-vkontakte-login@https://npm.eigenframe.com/MuStar/react-native-vkontakte-login?v=0.3.2-isloggedin",
+  "_id": "react-native-vkontakte-login@https://npm.eigenframe.com/MuStar/react-native-vkontakte-login?v=0.3.2-isloggedin",
+  "_inBundle": false,
+  "_integrity": "sha512-TraR/hoMuAhNL110DcW4t3kyq/RSsu2nivvtkIP2YoFSdyO4s1bZc8gHmrL7VhpHPixOQwMAMfStbNMiCjZObw==",
+  "_location": "/react-native-vkontakte-login",
+  "_phantomChildren": {
+    "ansi-escapes": "3.0.0",
+    "cli-cursor": "2.1.0",
+    "cli-width": "2.2.0",
+    "color-convert": "1.9.0",
+    "escape-string-regexp": "1.0.5",
+    "external-editor": "2.2.0",
+    "figures": "2.0.0",
+    "has-flag": "3.0.0",
+    "lodash": "4.17.11",
+    "mute-stream": "0.0.7",
+    "run-async": "2.3.0",
+    "rx-lite": "4.0.8",
+    "rx-lite-aggregates": "4.0.8",
+    "string-width": "2.1.1",
+    "through": "2.3.8",
+    "xmldom": "0.1.27"
+  },
+  "_requested": {
+    "type": "remote",
+    "raw": "react-native-vkontakte-login@https://npm.eigenframe.com/MuStar/react-native-vkontakte-login?v=0.3.2-isloggedin",
+    "name": "react-native-vkontakte-login",
+    "escapedName": "react-native-vkontakte-login",
+    "rawSpec": "https://npm.eigenframe.com/MuStar/react-native-vkontakte-login?v=0.3.2-isloggedin",
+    "saveSpec": "https://npm.eigenframe.com/MuStar/react-native-vkontakte-login?v=0.3.2-isloggedin",
+    "fetchSpec": "https://npm.eigenframe.com/MuStar/react-native-vkontakte-login?v=0.3.2-isloggedin"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_spec": "https://npm.eigenframe.com/MuStar/react-native-vkontakte-login?v=0.3.2-isloggedin",
+  "_where": "/Users/algeran/Documents/Projects/MustarReact",
+  "author": {
+    "name": "Konstantin Kuznetsov"
+  },
+  "bugs": {
+    "url": "https://github.com/doomsower/react-native-vkontakte-login/issues"
+  },
+  "dependencies": {
+    "balanced-match": "^1.0.0",
+    "glob": "^7.1.2",
+    "inquirer": "^4.0.1",
+    "plist": "^2.1.0"
+  },
   "description": "React Native wrapper for VK SDK Login",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "scripts": {
-    "build": "rm -rf ./lib/ && mkdir lib && tsc",
-    "build-scripts": "tsc -p ./scripts/tsconfig.json",
-    "doc": "typedoc --theme markdown --hideGenerator --mdHideSources --excludeExternals --excludePrivate --readme none --target es6 --mode file --out ./docs/generated --name API ./src/",
-    "prepublishOnly": "npm run build && npm run build-scripts",
-    "postinstall": "node ./scripts/postinstall.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "@types/extract-zip": "^1.6.2",
+    "@types/glob": "^5.0.33",
+    "@types/inquirer": "0.0.35",
+    "@types/node": "^8.0.57",
+    "@types/react": "^16.0.28",
+    "@types/react-native": "^0.51.0",
+    "@types/which": "^1.0.28",
+    "tslint": "^5.8.0",
+    "tslint-eslint-rules": "^4.1.1",
+    "tslint-react": "^3.2.0",
+    "typedoc": "^0.9.0",
+    "typedoc-plugin-markdown": "^1.0.11",
+    "typescript": "^2.6.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/doomsower/react-native-vkontakte-login.git"
-  },
+  "homepage": "https://github.com/doomsower/react-native-vkontakte-login#readme",
   "keywords": [
     "react",
     "react-native",
@@ -25,47 +80,28 @@
     "login",
     "share"
   ],
-  "author": "Konstantin Kuznetsov",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/doomsower/react-native-vkontakte-login/issues"
-  },
-  "homepage": "https://github.com/doomsower/react-native-vkontakte-login#readme",
-  "devDependencies": {
-    "@types/extract-zip": "^1.6.2",
-    "@types/fs-extra": "^5.0.0",
-    "@types/glob": "^5.0.33",
-    "@types/inquirer": "0.0.36",
-    "@types/node": "^9.3.0",
-    "@types/react": "^16.0.28",
-    "@types/react-native": "^0.52.2",
-    "@types/util.promisify": "^1.0.0",
-    "@types/which": "^1.3.1",
-    "tslint": "^5.8.0",
-    "tslint-eslint-rules": "^5.0.0",
-    "tslint-react": "^3.2.0",
-    "typedoc": "^0.10.0",
-    "typedoc-plugin-markdown": "^1.0.11",
-    "typescript": "^2.7.2"
-  },
-  "dependencies": {
-    "axios": "^0.17.1",
-    "balanced-match": "^1.0.0",
-    "extract-zip": "^1.6.6",
-    "fs-extra": "^5.0.0",
-    "glob": "^7.1.2",
-    "inquirer": "^5.1.0",
-    "plist": "^2.1.0",
-    "util.promisify": "^1.0.0",
-    "which": "^1.3.0",
-    "xcode": "^1.0.0"
-  },
+  "main": "lib/index.js",
+  "name": "react-native-vkontakte-login",
   "peerDependencies": {
     "react-native": ">=0.51.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doomsower/react-native-vkontakte-login.git"
   },
   "rnpm": {
     "commands": {
       "postlink": "node node_modules/react-native-vkontakte-login/scripts/postlink"
     }
-  }
+  },
+  "scripts": {
+    "build": "rm -rf ./lib/ && mkdir lib && tsc",
+    "build-scripts": "tsc -p ./scripts/tsconfig.json",
+    "doc": "typedoc --theme markdown --hideGenerator --mdHideSources --excludeExternals --excludePrivate --readme none --target es6 --mode file --out ./docs/generated --name API ./src/",
+    "prepublishOnly": "npm run build && npm run build-scripts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "lib/index.d.ts",
+  "version": "0.3.2-isloggedin"
 }
